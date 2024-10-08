@@ -68,7 +68,7 @@ namespace storeAPI.Controllers
             {
                 return NotFound();
             }
-            return NoContent();
+            return Ok(new { message = "Deleted the category successfully!" });
         }
     }
 }
